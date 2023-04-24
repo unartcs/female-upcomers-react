@@ -65,7 +65,9 @@
   cursor: pointer;
   background-color: rgb(254, 233, 124);
 }
-
+fieldset > input, fieldset > textarea {
+  width: 100%;
+}
 .submit-btn {
     color: pointer;
     background-color: #faedb9;
@@ -77,4 +79,22 @@
     text-decoration: none;
     border: none;
     font-size: 22px;
+  }
+
+  @media (width < 800px) {
+    fieldset {
+      align-items: center;
+    }
+    fieldset > input {
+      width: 100%;
+    }
+  }
+
+  @media (width < 450px) {
+    fieldset {
+      align-items: center;
+    }
+    fieldset > input {
+      width: 100%;
+    }
   }

@@ -26,7 +26,7 @@ function Join() {
               required
             />
           </fieldset>
-          <fieldset>
+          <fieldset className="option-fieldset">
             <select
               aria-label="label for the select"
               id="education"

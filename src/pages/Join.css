@@ -14,8 +14,8 @@
 .join-form-container {
     display: flex;
     flex-direction: column;
-    min-width: 300px;
     align-items: center;
+    width: 100%;
   }
   
   .join-form {
@@ -25,13 +25,15 @@
     gap: 1rem;
     font-family: "Montserrat", "Belgrano", "sans-serif";
     color: black;
+    align-items: center;
+    width: 100%;
   }
   
   fieldset {
     display: flex;
     flex-direction: column;
     width: 40vw;
-    min-width: 20 0px;
+    min-width: 200px;
   }
   fieldset > select > option {
     padding: 0.5rem 2rem;
@@ -100,4 +102,14 @@ textarea:focus {
   }
 .join-form-submit-button:hover {
     cursor: pointer;
+}
+
+fieldset > input, fieldset > textarea, fieldset > select {
+  width: 100%;
+}
+
+@media (width < 500px) {
+  .join-us-title {
+    font-size: 36px;
+  }
 }
