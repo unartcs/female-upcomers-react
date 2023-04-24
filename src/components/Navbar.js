@@ -5,7 +5,9 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <div className="navbar-wrapper">
-      <img className="navbar-logo" src={logo} alt="logo" />
+      <NavLink to="/" activeClassName="active">
+        <img className="navbar-logo" src={logo} alt="logo" />
+      </NavLink>
       <ul className="navbar-ul">
         <NavLink to="/" activeClassName="active">
           <li>Forside</li>
