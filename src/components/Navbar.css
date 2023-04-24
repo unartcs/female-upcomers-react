@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Montserrat:wght@100;300;400;600;700;900&display=swap');
+
+.navbar-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  width: 100%;
+  gap: 5rem;
+  background-color: #FAEDB9;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-size: 24px;
+  font-family: "Montserrat", "Belgrano", "sans-serif";
+}
+
+.navbar-logo {
+  width: 100px;
+}
+.navbar-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.navbar-ul > li:hover {
+cursor: pointer;
+}
+a,
+a:visited,
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(101, 101, 101);
+}
+
+.active {
+  font-weight: 600;
+}

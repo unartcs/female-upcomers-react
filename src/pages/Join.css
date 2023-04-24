@@ -1,0 +1,103 @@
+.join-us-wrapper {
+    displaY: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    height: 100%;
+}
+
+.join-us-title {
+    font-size: 48px;
+}
+
+.join-form-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    align-items: center;
+  }
+  
+  .join-form {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: "Montserrat", "Belgrano", "sans-serif";
+    color: black;
+  }
+  
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    min-width: 20 0px;
+  }
+  fieldset > select > option {
+    padding: 0.5rem 2rem;
+  
+    border-radius: 20px;
+  }
+  fieldset > textarea {
+    height: 110px;
+    font-size: 18px;
+    -webkit-box-shadow: 5px 5px 0px 0px #efe8ce;
+    -moz-box-shadow: 5px 5px 0px 0px #efe8ce;
+    box-shadow: 5px 5px 0px #efe8ce;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border-color: #faf6ea;
+    outline-color: #efe8ce;
+    resize: none;
+  }
+  .join_form_field {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+.join-form-submit-button {
+  color: pointer;
+  background-color: #faedb9;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  -webkit-box-shadow: 5px 5px 0px 0px #efe8ce;
+  -moz-box-shadow: 5px 5px 0px 0px #efe8ce;
+  box-shadow: 5px 5px 0px #efe8ce;
+  text-decoration: none;
+  border: none;
+  font-size: 22px;
+}
+
+input,
+select {
+  font-size: 18px;
+  height: 100%;
+  -webkit-box-shadow: 5px 5px 0px 0px #efe8ce;
+  -moz-box-shadow: 5px 5px 0px 0px #efe8ce;
+  box-shadow: 5px 5px 0px #efe8ce;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border-color: #faf6ea;
+  outline-color: #efe8ce;
+  border-style: hidden;
+}
+input:focus,
+textarea:focus {
+  outline-style: none;
+}
+.submit-btn-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+  
+  .submit-btn-field > button:hover,
+  .about-us-contact-button:hover {
+    cursor: pointer;
+    background-color: rgb(254, 233, 124);
+  }
+.join-form-submit-button:hover {
+    cursor: pointer;
+}

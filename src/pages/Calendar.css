@@ -1,0 +1,131 @@
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 2rem 4rem; */
+}
+.calendar-content-wrapper {
+    display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  height: 100%;
+  padding: 4rem 4rem;
+  gap: 1rem;
+}
+.calendar-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem;
+    min-height: 0;
+    min-width: 0;
+    margin-top: 2rem;
+  }
+  
+  .calendar-grid-box {
+    background-color: #faedb9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    padding: 2rem;
+    min-width: 0;
+    line-height: 1.5;
+  }
+  
+  .calendar-grid-box-title {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .calendar-grid-box-desc {
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .calender-grid-box-info {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  .calendar-grid-box-info-date,
+  .calendar-grid-box-info-location {
+    display: flex;
+    gap: 0.1rem;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+  }
+  .calendar-grid-box-info-date > img,
+  .calendar-grid-box-info-location > img {
+    height: 2rem;
+  }
+
+  .calendar-content-title {
+    font-size: 48px;
+    padding-bottom: 1vh;
+  }
+  
+  .calendar-content-text {
+    font-size: 28px;
+  }
+
+.hide {
+  display: none;
+}
+
+.calendar-grid-box-image > img {
+  height: 150px;
+}
+
+@media (width < 1050px) {
+  .calendar-content-wrapper {
+    align-items: center;
+  }
+  .calender-grid-box-info {
+    flex-direction: column;
+    gap: 0;
+  }
+  .calendar-content-title {
+    font-size: 36px;
+  }
+  .calendar-content-text {
+    font-size: 24px;
+  }
+}
+
+@media (width < 480px) {
+  .calendar-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  .calendar-content-wrapper {
+    align-items: center;
+  }
+  .calender-grid-box-info {
+    flex-direction: column;
+    gap: 0;
+  }
+  .calendar-content-title {
+    font-size: 24px;
+  }
+  .calendar-content-text {
+    font-size: 16px;
+  }
+  .calendar-grid-box-image > img {
+    height: 100px;
+  }
+  .calendar-grid-box-title {
+    font-size: 18px;
+  }
+  .calendar-grid-box-desc {
+    font-size: 12px;
+  }
+  .calendar-grid-box-info-date, .calendar-grid-box-info-location {
+    font-size: 12px;
+  }
+}
