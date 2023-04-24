@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/female-upcomers-react/static/css/main.36d7e123.css",
+    "main.js": "/female-upcomers-react/static/js/main.0fad7fc0.js",
+    "static/media/about-us-image1.png": "/female-upcomers-react/static/media/about-us-image1.c0810ac166d8f4835c09.png",
+    "static/media/logotransparenttrimmed.png": "/female-upcomers-react/static/media/logotransparenttrimmed.e3dcdba66d7290c9c8cc.png",
+    "index.html": "/female-upcomers-react/index.html",
+    "main.36d7e123.css.map": "/female-upcomers-react/static/css/main.36d7e123.css.map",
+    "main.0fad7fc0.js.map": "/female-upcomers-react/static/js/main.0fad7fc0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36d7e123.css",
+    "static/js/main.0fad7fc0.js"
+  ]
+}
