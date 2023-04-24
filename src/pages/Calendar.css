@@ -34,6 +34,11 @@
     min-width: 0;
     line-height: 1.5;
   }
+
+  .calendar-grid-box:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
   
   .calendar-grid-box-title {
     font-size: 24px;
