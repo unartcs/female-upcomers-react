@@ -120,7 +120,7 @@ a:hover {
 }
 
 
-@media (width < 1000px) {
+@media (width < 750px) {
   .hamburger-menu {
     display: block;
   }

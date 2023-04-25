@@ -18,8 +18,8 @@ function SpotifyList() {
       searchShows();
       setTimeout(() => {
         setEnableView(true)
-      }, 1000)
-    }, 2000);
+      }, 200)
+    }, 1000);
   }, [accessToken]);
   async function updateStuff() {
     var authParemeters = {
