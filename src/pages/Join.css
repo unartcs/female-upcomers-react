@@ -28,7 +28,9 @@
     align-items: center;
     width: 100%;
   }
-  
+  input:focus, textarea:focus, select:focus {
+    background-color: #faedb9;
+  }
   fieldset {
     display: flex;
     flex-direction: column;

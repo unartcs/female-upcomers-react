@@ -22,7 +22,7 @@ function Home() {
           <div className="home-image">
             <img
               src={`${process.env.PUBLIC_URL}/imgs/${homeData["home-image"]}`}
-            />
+            alt='home'/>
           </div>
         </div>
       </div>

@@ -46,7 +46,7 @@ export default class SponserSlide extends Component {
     };
     return (
       <div className="sponser-slider-wrapper">
-        <h1 className="sponser-slider-title">Our Sponsers</h1>
+        {/* <h1 className="sponser-slider-title">Our Sponsers</h1> */}
         <Slider {...settings}>
           {sponserData.map((item) => {
             return (

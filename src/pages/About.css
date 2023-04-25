@@ -86,6 +86,10 @@
   justify-content: center;
 }
 
+.about-section-1-right > img {
+  margin-top: 2rem;
+  width: 600px;
+}
 .about-grid-box-left-wrapper {
   display: flex;
   align-items: center;
@@ -118,6 +122,12 @@
   width: 50%;
 }
 
+@media (width < 1150px) {
+  .about-section-1-right > img {
+    margin-top: 2rem;
+    width: 400px;
+  }
+}
 @media (width < 950px) {
   .about-section-1,
   .about-section-2-content {

@@ -10,14 +10,16 @@
 .home-section-1 {
   display: flex;
   flex-direction: row;
-  padding: 8rem 6rem;
+  padding: 8rem 8rem;
   justify-content: space-between;
 }
 .home-title-wrapper {
   display: flex;
   flex-direction: column;
 }
-
+.home-image > img {
+  height: 450px;
+}
 .home-title {
   font-size: 96px;
 }
@@ -30,4 +32,130 @@
 .home-text-content {
     width: 80%;
   font-size: 24px;
+}
+
+@media (width < 1380px) {
+  .home-section-1 {
+    flex-direction: column;
+    padding: 8rem 6rem;
+  }
+  .home-image > img {
+    height: 400px;
+  }
+  .home-title {
+    font-size: 72px;
+  }
+  .home-sub-title {
+    font-size: 36px;
+  }
+  .home-text-title {
+    font-size: 28px;
+  }
+  .home-text-content {
+      width: 100%;
+    font-size: 24px;
+  }
+}
+
+@media (width < 940px) {
+  .home-section-1 {
+    flex-direction: column;
+    padding: 8rem 6rem;
+    align-items: center;
+    text-align: center;
+  }
+  .home-image > img {
+    height: 400px;
+  }
+  .home-title {
+    font-size: 50px;
+  }
+  .home-sub-title {
+    font-size: 28px;
+  }
+  .home-text-title {
+    font-size: 22px;
+  }
+  .home-text-content {
+      width: 100%;
+    font-size: 20px;
+  }
+}
+
+@media (width < 720px) {
+  .home-section-1 {
+    flex-direction: column;
+    padding: 4rem 2rem;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+  }
+  .home-image > img {
+    height: 300px;
+  }
+  .home-title {
+    font-size: 32px;
+  }
+  .home-sub-title {
+    font-size: 20px;
+  }
+  .home-text-title {
+    font-size: 18px;
+  }
+  .home-text-content {
+      width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media (width < 550px) {
+  .home-section-1 {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+  }
+  .home-image > img {
+    height: 200px;
+  }
+  .home-title {
+    font-size: 26px;
+  }
+  .home-sub-title {
+    font-size: 18px;
+  }
+  .home-text-title {
+    font-size: 16px;
+  }
+  .home-text-content {
+      width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media (width < 360px) {
+  .home-section-1 {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+  }
+  .home-image > img {
+    height: 150px;
+  }
+  .home-title {
+    font-size: 26px;
+  }
+  .home-sub-title {
+    font-size: 18px;
+  }
+  .home-text-title {
+    font-size: 16px;
+  }
+  .home-text-content {
+      width: 100%;
+    font-size: 14px;
+  }
 }
