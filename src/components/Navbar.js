@@ -10,9 +10,9 @@ function Navbar() {
   };
   const closeBurger = () => {
     if (activeBurger) {
-      setActiveBurger(false)
+      setActiveBurger(false);
     }
-  }
+  };
   return (
     <div className="navbar-wrapper">
       <NavLink to="/" activeClassName="active" onClick={closeBurger}>
@@ -38,6 +38,7 @@ function Navbar() {
           <li>Kontakt</li>
         </NavLink>
       </ul>
+      <h1 className="burger-text">Female Upcomers</h1>
       {activeBurger ? (
         <div className="hamburger-menu-ul-wrapper">
           <ul className="hamburger-menu-ul">
@@ -47,16 +48,28 @@ function Navbar() {
             <NavLink to="/about" activeClassName="active" onClick={closeBurger}>
               <li>Om os</li>
             </NavLink>
-            <NavLink to="/calendar" activeClassName="active" onClick={closeBurger}>
+            <NavLink
+              to="/calendar"
+              activeClassName="active"
+              onClick={closeBurger}
+            >
               <li>Aktivitetskalender</li>
             </NavLink>
             <NavLink to="/join" activeClassName="active" onClick={closeBurger}>
               <li>Bliv Medlem</li>
             </NavLink>
-            <NavLink to="/podcast" activeClassName="active" onClick={closeBurger}>
+            <NavLink
+              to="/podcast"
+              activeClassName="active"
+              onClick={closeBurger}
+            >
               <li>Podcast</li>
             </NavLink>
-            <NavLink to="/contact" activeClassName="active" onClick={closeBurger}>
+            <NavLink
+              to="/contact"
+              activeClassName="active"
+              onClick={closeBurger}
+            >
               <li>Kontakt</li>
             </NavLink>
           </ul>

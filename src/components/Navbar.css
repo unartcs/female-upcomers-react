@@ -58,8 +58,7 @@ a:hover {
   outline: none;
   border: none;  
   z-index: 55;
-
-
+  margin-right: 5%;
 }
 .hamburger-menu .bar, .hamburger-menu::after, .hamburger-menu::before {
   content: '';
@@ -119,9 +118,18 @@ a:hover {
   background-color: #FBF6DA;
 }
 
+.burger-text {
+  display: none;
+  font-size: 24px;
+  text-align: center;
+}
+
 
 @media (width < 750px) {
   .hamburger-menu {
+    display: block;
+  }
+  .burger-text {
     display: block;
   }
 }
