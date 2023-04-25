@@ -2,6 +2,7 @@ import React from "react";
 import podcastData from "../data/Podcast.json";
 import "./Podcast.css";
 import podcastSpotifyData from "../data/PodcastData";
+import SpotifyList from '../components/SpotifyList'
 function Podcast() {
   return (
     <div className="podcast-wrapper">
@@ -19,8 +20,8 @@ function Podcast() {
       </div>
 
       <div className="podcast-grid-title">Episoder</div>
-      <div className="podcast-grid-container">
-        {podcastSpotifyData.map((item) => {
+        <SpotifyList/>
+        {/* {podcastSpotifyData.map((item) => {
           return (
             <iframe
               style={{ borderRadius: "15px" }}
@@ -34,9 +35,9 @@ function Podcast() {
               key={`${Math.floor(Math.random())}`}
             ></iframe>
           );
-        })}
+        })} */}
       </div>
-    </div>
+
   );
 }
 

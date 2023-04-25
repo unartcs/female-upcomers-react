@@ -7,15 +7,17 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 
-import {RxLinkedinLogo} from "react-icons/rx"
+import { RxLinkedinLogo } from "react-icons/rx";
 
 function Contact() {
   return (
-    <div className="contact-us-wrapper" style={{ backgroundImage: `url(${bgImage})` }}>
-      <div className="contact-us-container">
-        <div className="contact-us-title">Kontakt os</div>
-      </div>
+    <div
+      className="contact-us-wrapper"
+      style={{ backgroundImage: `url(${bgImage})` }}
+    >
       <form className="contact-form">
+        <div className="contact-us-title">Kontakt os</div>
+
         <fieldset>
           <input
             type="text"
@@ -55,15 +57,21 @@ function Contact() {
       </form>
       <div className="contact-us-content">
         <ul className="contact-list">
-          <li>
-            <FaFacebookSquare size={64} />
-          </li>
-          <li>
-            <FaInstagramSquare size={64} />
-          </li>
-          <li>
-            <FaLinkedin size={64} />
-          </li>
+          <a href="https://www.facebook.com/people/Female-Upcomers/100078238503316">
+            <li>
+              <FaFacebookSquare size={64} />
+            </li>
+          </a>
+          <a href="https://www.instagram.com/femaleupcomers/">
+            <li>
+              <FaInstagramSquare size={64} />
+            </li>
+          </a>
+          <a href="https://www.linkedin.com/company/female-upcomers/">
+            <li>
+              <FaLinkedin size={64} />
+            </li>
+          </a>
         </ul>
       </div>
     </div>

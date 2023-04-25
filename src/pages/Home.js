@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import homeData from "../data/Home.json";
 import SponserSlide from "../components/SponserSlide";
+import Instagram from "../components/Instagram";
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function Home() {
           </div>
         </div>
       </div>
+      {/* <Instagram/> */}
       <div className="sponser-container">
         <SponserSlide />
       </div>
