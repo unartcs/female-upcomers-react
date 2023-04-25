@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Montserrat:wght@100;300;400;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Belgrano&family=Montserrat:wght@100;300;400;600;700;900&display=swap");
 
 .navbar-wrapper {
   display: flex;
@@ -9,7 +9,7 @@
   padding: 0.5rem 2rem;
   width: 100%;
   gap: 5rem;
-  background-color: #FAEDB9;
+  background-color: #faedb9;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   font-size: 24px;
@@ -30,7 +30,7 @@
 }
 
 .navbar-ul > li:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 a,
 a:visited,
@@ -45,4 +45,97 @@ a:hover {
 
 .active {
   font-weight: 600;
+}
+
+
+.hamburger-menu {
+  display: none;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+.hamburger-menu .bar, .hamburger-menu::after, .hamburger-menu::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+.hamburger-menu.active::before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger-menu.active::after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger-menu.active .bar {
+  opacity: 0;
+}
+
+.hamburger-menu-ul-wrapper {
+  background-color: white;
+  position: absolute;
+  top: 20%;
+}
+
+.hamburger-menu-ul {
+  
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (width < 1000px) {
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+
+@media (width < 1160px) {
+  .navbar-wrapper {
+    font-size: 21px;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 0.4rem 1rem;
+  }
+}
+
+@media (width < 1020px) {
+  .navbar-wrapper {
+    font-size: 18px;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 0.4rem 1rem;
+  }
+  .navbar-logo {
+    width: 80px;
+  }
+}
+
+@media (width < 900px) {
+  .navbar-wrapper {
+    font-size: 16px;
+    gap: 1rem;
+    padding: 0.4rem 0.5rem;
+  }
+  .navbar-logo {
+    width: 50px;
+  }
+}
+@media (width < 750px) {
+  .navbar-ul {
+    display: none;
+  }
+  .navbar-logo {
+    width: 50px;
+  }
 }

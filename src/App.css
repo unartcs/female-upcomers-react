@@ -92,7 +92,9 @@ body,
 .App,
 .App > div {
   height: 100%;
-
+}
+html,body,.App {
+  scroll-behavior: smooth;
 }
 
 body {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Navbar from "../components/Navbar";
 import About from "./About";
 import Contact from "./Contact";
