@@ -56,7 +56,10 @@ a:hover {
   appearance: none;
   background: none;
   outline: none;
-  border: none;
+  border: none;  
+  z-index: 55;
+
+
 }
 .hamburger-menu .bar, .hamburger-menu::after, .hamburger-menu::before {
   content: '';
@@ -80,16 +83,40 @@ a:hover {
 }
 
 .hamburger-menu-ul-wrapper {
-  background-color: white;
-  position: absolute;
-  top: 20%;
+  background-color: #faedb9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 50;
 }
 
 .hamburger-menu-ul {
-  
   list-style: none;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  padding: 10rem 0rem;
+  gap: 2rem;
+}
+
+.hamburger-menu-ul > * >li {
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.212);
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.hamburger-menu-ul > * >li:hover {
+  background-color: #FBF6DA;
 }
 
 
@@ -103,7 +130,6 @@ a:hover {
 @media (width < 1160px) {
   .navbar-wrapper {
     font-size: 21px;
-    justify-content: flex-start;
     gap: 2rem;
     padding: 0.4rem 1rem;
   }
@@ -112,7 +138,6 @@ a:hover {
 @media (width < 1020px) {
   .navbar-wrapper {
     font-size: 18px;
-    justify-content: flex-start;
     gap: 2rem;
     padding: 0.4rem 1rem;
   }

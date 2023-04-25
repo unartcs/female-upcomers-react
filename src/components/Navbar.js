@@ -8,53 +8,55 @@ function Navbar() {
   const burgerHandler = () => {
     setActiveBurger(!activeBurger);
   };
-  useEffect(()=> {
-    setActiveBurger(false)
-  },[])
+  const closeBurger = () => {
+    if (activeBurger) {
+      setActiveBurger(false)
+    }
+  }
   return (
     <div className="navbar-wrapper">
-      <NavLink to="/" activeClassName="active">
+      <NavLink to="/" activeClassName="active" onClick={closeBurger}>
         <img className="navbar-logo" src={logo} alt="logo" />
       </NavLink>
       <ul className="navbar-ul">
-        <NavLink to="/" activeClassName="active">
+        <NavLink to="/" activeClassName="active" onClick={closeBurger}>
           <li>Forside</li>
         </NavLink>
-        <NavLink to="/about" activeClassName="active">
+        <NavLink to="/about" activeClassName="active" onClick={closeBurger}>
           <li>Om os</li>
         </NavLink>
-        <NavLink to="/calendar" activeClassName="active">
+        <NavLink to="/calendar" activeClassName="active" onClick={closeBurger}>
           <li>Aktivitetskalender</li>
         </NavLink>
-        <NavLink to="/join" activeClassName="active">
+        <NavLink to="/join" activeClassName="active" onClick={closeBurger}>
           <li>Bliv Medlem</li>
         </NavLink>
-        <NavLink to="/podcast" activeClassName="active">
+        <NavLink to="/podcast" activeClassName="active" onClick={closeBurger}>
           <li>Podcast</li>
         </NavLink>
-        <NavLink to="/contact" activeClassName="active">
+        <NavLink to="/contact" activeClassName="active" onClick={closeBurger}>
           <li>Kontakt</li>
         </NavLink>
       </ul>
       {activeBurger ? (
         <div className="hamburger-menu-ul-wrapper">
           <ul className="hamburger-menu-ul">
-            <NavLink to="/" activeClassName="active">
+            <NavLink to="/" activeClassName="active" onClick={closeBurger}>
               <li>Forside</li>
             </NavLink>
-            <NavLink to="/about" activeClassName="active">
+            <NavLink to="/about" activeClassName="active" onClick={closeBurger}>
               <li>Om os</li>
             </NavLink>
-            <NavLink to="/calendar" activeClassName="active">
+            <NavLink to="/calendar" activeClassName="active" onClick={closeBurger}>
               <li>Aktivitetskalender</li>
             </NavLink>
-            <NavLink to="/join" activeClassName="active">
+            <NavLink to="/join" activeClassName="active" onClick={closeBurger}>
               <li>Bliv Medlem</li>
             </NavLink>
-            <NavLink to="/podcast" activeClassName="active">
+            <NavLink to="/podcast" activeClassName="active" onClick={closeBurger}>
               <li>Podcast</li>
             </NavLink>
-            <NavLink to="/contact" activeClassName="active">
+            <NavLink to="/contact" activeClassName="active" onClick={closeBurger}>
               <li>Kontakt</li>
             </NavLink>
           </ul>
