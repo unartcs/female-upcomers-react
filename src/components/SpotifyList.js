@@ -54,7 +54,7 @@ function SpotifyList() {
       console.log("There was an error", error);
     }
     if (api?.ok) {
-      console.log("Use the response here!");
+      // console.log("Use the response here!");
       const data = await api.json();
       setAccessToken(data.access_token);
     } else {
@@ -96,7 +96,7 @@ function SpotifyList() {
       console.log("There was an error", error);
     }
     if (api?.ok) {
-      console.log("Use the response here!");
+      // console.log("Use the response here!");
       const data = await api.json();
       setEpisodeList(data);
       setEnableView(true);

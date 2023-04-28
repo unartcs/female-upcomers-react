@@ -26,7 +26,7 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* <Instagram/> */}
+      <Instagram/>
       <div className="sponser-container">
         <SponserSlide />
       </div>
