@@ -15,7 +15,7 @@ function Instagram() {
   // }
   const fetchData = async () => {
     const response = await fetch(
-      `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,timestamp,permalink&access_token=${process.env.INSTAGRAM_TOKEN}...`
+      `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,timestamp,permalink&access_token=${process.env.REACT_APP_INSTAGRAM_API_KEY}...`
     );
     const data = await response.json();
     if (!response.ok) {
