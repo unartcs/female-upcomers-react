@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/female-upcomers-react/static/css/main.7efa29a7.css",
-    "main.js": "/female-upcomers-react/static/js/main.2e1ce429.js",
+    "main.js": "/female-upcomers-react/static/js/main.6b749806.js",
     "static/media/about-us-image1.png": "/female-upcomers-react/static/media/about-us-image1.44a0367a5c84c3d140cb.png",
     "static/media/logotransparenttrimmed.png": "/female-upcomers-react/static/media/logotransparenttrimmed.e3dcdba66d7290c9c8cc.png",
     "static/media/slick.svg": "/female-upcomers-react/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -10,10 +10,10 @@
     "static/media/slick.woff": "/female-upcomers-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/female-upcomers-react/index.html",
     "main.7efa29a7.css.map": "/female-upcomers-react/static/css/main.7efa29a7.css.map",
-    "main.2e1ce429.js.map": "/female-upcomers-react/static/js/main.2e1ce429.js.map"
+    "main.6b749806.js.map": "/female-upcomers-react/static/js/main.6b749806.js.map"
   },
   "entrypoints": [
     "static/css/main.7efa29a7.css",
-    "static/js/main.2e1ce429.js"
+    "static/js/main.6b749806.js"
   ]
 }
