@@ -34,16 +34,6 @@ function SpotifyList() {
       },
       body: `grant_type=client_credentials&client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}`,
     };
-    // await fetch("https://accounts.spotify.com/api/token", authParemeters)
-    //   .then((result) => result.json())
-    //   .then((data) => setAccessToken(data.access_token));
-
-    // const api = await fetch(
-    //   "https://accounts.spotify.com/api/token",
-    //   authParemeters
-    // );
-    // const data = await api.json();
-    // setAccessToken(data.access_token);
     let api = "";
     try {
       api = await fetch(
@@ -69,23 +59,6 @@ function SpotifyList() {
         "Content-Type": "application/json",
       },
     };
-    // let show = await fetch(
-    //   `https://api.spotify.com/v1/shows/6iqBa4nNBqoinj5y44yrlE/episodes?offset=0&limit=20`,
-    //   authParemeters
-    // );
-    // let show = await fetch(
-    //   "https://api.spotify.com/v1/shows/6iqBa4nNBqoinj5y44yrlE?market=US",
-    //   auth
-    // )
-    //   .then((response) => response.json())
-    //   .then((data) => setEpisodeList(data));
-
-    // let api = await fetch(
-    //   "https://api.spotify.com/v1/shows/6iqBa4nNBqoinj5y44yrlE?market=US",
-    //   auth
-    // );
-    // let data = await api.json();
-    // setEpisodeList(await data);
     let api = "";
     try {
       api = await fetch(
@@ -126,6 +99,7 @@ function SpotifyList() {
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
                 loading="lazy"
                 key={x.id}
+                title={x.id}
               ></iframe>
             );
           })}

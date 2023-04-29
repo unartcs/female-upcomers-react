@@ -21,21 +21,7 @@ function Podcast() {
 
       <div className="podcast-grid-title">Episoder</div>
         <SpotifyList/>
-        {/* {podcastSpotifyData.map((item) => {
-          return (
-            <iframe
-              style={{ borderRadius: "15px" }}
-              src={item.link}
-              width="100%"
-              height="152"
-              frameBorder="0"
-              allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
-              loading="lazy"
-              key={`${Math.floor(Math.random())}`}
-            ></iframe>
-          );
-        })} */}
+        
       </div>
 
   );
