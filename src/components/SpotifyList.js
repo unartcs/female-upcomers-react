@@ -8,8 +8,8 @@ function SpotifyList() {
   const didMount = useRef(false);
   // const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
   // const CLIENT_SECRET = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
-  const CLIENT_ID = process.env.secrets.REACT_APP_SPOTIFY_CLIENT_ID;
-  const CLIENT_SECRET = process.env.secrets.REACT_APP_SPOTIFY_CLIENT_SECRET;
+  const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
+  const CLIENT_SECRET = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
 
   const PODCAST_ID = "6iqBa4nNBqoinj5y44yrlE";
   useEffect(() => {
