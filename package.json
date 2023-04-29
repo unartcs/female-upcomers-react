@@ -1,6 +1,7 @@
 {
   "name": "female-upcomers-react",
   "homepage": "https://unartcs.github.io/female-upcomers-react/",
+
   "version": "0.1.0",
   "private": true,
   "dependencies": {
