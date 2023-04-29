@@ -47,7 +47,6 @@ function Instagram() {
               <InstagramEmbed
                 url={item.permalink}
                 igVersion={14}
-              
                 height={700}
               />
             );
