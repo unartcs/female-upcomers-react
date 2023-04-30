@@ -14,9 +14,9 @@ const podcastData = [
   {
     link: "https://open.spotify.com/embed/episode/3zc5cKtLHotbAeuj6he98H?utm_source=generator&theme=0",
   },
-  {
-    link: "https://open.spotify.com/embed/episode/5h8SyHX1bQXfRTvua3pmEY?utm_source=generator&theme=0",
-  },
+  // {
+  //   link: "https://open.spotify.com/embed/episode/5h8SyHX1bQXfRTvua3pmEY?utm_source=generator&theme=0",
+  // },
 ];
 
 export default podcastData;

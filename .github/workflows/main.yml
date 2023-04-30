@@ -2,7 +2,7 @@ name: API Test
 "on":
   push:
     branches:
-      - master
+      - main
 env:
   CI: false
   REACT_APP_INSTAGRAM_API_KEY: ${{ secrets.REACT_APP_INSTAGRAM_API_KEY }}
