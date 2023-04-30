@@ -25,7 +25,7 @@ jobs:
         REACT_APP_SPOTIFY_CLIENT_SECRET: ${{ secrets.REACT_APP_SPOTIFY_CLIENT_SECRET }}
 
     - name: Deploy
-      uses: unartcs/female-upcomers-react@releases/v3
+      uses: unartcs/female-upcomers-react
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
