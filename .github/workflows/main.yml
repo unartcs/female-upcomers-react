@@ -23,3 +23,9 @@ jobs:
         REACT_APP_INSTAGRAM_API_KEY: ${{ secrets.REACT_APP_INSTAGRAM_API_KEY }}
         REACT_APP_SPOTIFY_CLIENT_ID: ${{ secrets.REACT_APP_SPOTIFY_CLIENT_ID }}
         REACT_APP_SPOTIFY_CLIENT_SECRET: ${{ secrets.REACT_APP_SPOTIFY_CLIENT_SECRET }}
+    - name: Deploy
+      uses: unartcs/female-upcomers-react/checkout@v1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build
