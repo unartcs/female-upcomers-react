@@ -27,6 +27,7 @@ const sponserData = [
         name: "The North Face",
         image: "the-north-face-1.svg",
       },
+
 ];
 
 export default sponserData

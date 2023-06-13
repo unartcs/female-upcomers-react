@@ -55,8 +55,6 @@ const calendarData = [
         speaker: 'Dr House',
         text: 'bla bla bla bla bla bla bla bla bla bla bla bla'
     },
-    
-    
 ];
 
 export default calendarData;
